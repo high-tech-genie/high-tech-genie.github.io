@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularz</title>
+    <style>
+    
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+    }
+
+    #submit {
+        border-radius: 20px;
+        background-image: linear-gradient(150deg, rgb(67, 213, 67), rgb(206, 230, 74));
+        font-weight: bold;
+        border: solid 1.5px black;
+        transition: all 1s ease;
+    }
+
+    #submit:hover {
+        width: 105%;
+    }
+    </style>
+</head>
+<body>
+    <form id="formularz" action="action">
+        <label>imie:</label><br>
+        <input type="text" name="imie"><br>
+        <label>email:</label><br>
+        <input type="email" name="mail"><br>
+        <label>wiek:</label><br>
+        <input type="number" name="phonenumber"><br>
+        <label>miasto:</label><br>
+        <select name="select">
+            <option>boat, poland</option>
+            <option>somewhere else</option>
+        </select>
+        <label>textarea:</label><br>
+        <textarea name="textarea">thats a big ahh text area</textarea><br>
+        <input type="submit" id="submit">
+    </form>
+</body>
+</html>
